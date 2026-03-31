@@ -3,17 +3,17 @@
     padding: 0px;
     margin: 0px;
     text-decoration: none;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 
-body, .header, .header-menu, .hero, .hero-content, .funcionalidades-cards{
+body, .header, .header-menu, .hero, .hero-content, .funcionalidades-cards, .funcionalidades-card{
     display: flex;
 }
 
 .header, .main, .footer {
-    /*max-width: 1200px;*/
     width: 100%;
+
+    font-family: Helvetica, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 body {
@@ -34,14 +34,14 @@ body {
     padding: 10px 0px;
     margin: 0 auto;
 
-    background-color: rgb(53, 53, 53);
-    
+    background-color: rgb(53, 53, 53); 
 }
 
 .logo {
     margin-left: 60px;
 
     font-size: 50px;
+    font-family: Roboto, sans-serif;
     color: rgb(236, 5, 167);
     font-style: italic;
     font-weight: 1000;
@@ -63,7 +63,7 @@ body {
 }
 
 .header-menu-link {
-    color: rgb(236, 5, 167);
+    color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 700;
     opacity: 0.7;
@@ -72,6 +72,23 @@ body {
 .header-menu-link:hover {
     opacity: 1;
 }
+
+.header-menu-button {
+    padding: 10px;
+    border: 3px solid #ff2ea6;
+    border-radius: 10px;
+
+    color: #ff2ea6;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: transparent;
+}
+
+.header-menu-button:hover {
+    text-shadow: 0 0px 1px #ff2ea48c;
+    box-shadow: 0 0px 2px #ff2ea6;
+}
+
 
 /*-----------------MAIN-----------------*/
 .main {
@@ -87,7 +104,6 @@ body {
 
     padding: 150px 0;
 
-
     background: 
     linear-gradient(to right, rgb(53, 53, 53) 40%, rgba(0,0,0,0.2)),
     url("https://tribunadoplanalto.com.br/wp-content/uploads/2025/04/CELULAR-MAL-DO-SECULO-OU-SOLUCAO-iStock.jpg");
@@ -99,24 +115,22 @@ body {
 .hero-content {
     flex-direction: column;
     justify-content: space-between;
-    
     gap: 20px;
 
     max-width: 400px;
     width: 100%;
     max-height: 300px;
-    
 }
 
 .hero-content h1 {
     font-size: 50px;
-    color: rgb(236, 5, 167);
+    color: rgb(255, 255, 255);
 }
 
 .hero-content p {
     font-size: 30px;
     text-align: center;
-    color: rgb(236, 5, 167);
+    color: rgb(255, 255, 255);
     opacity: 0.8;
 }
 
@@ -125,6 +139,7 @@ body {
     border: none;
     border-radius: 8px;
 
+    color: white;
     background: #ff2ea6;
     font-size: 20px;
     font-weight: bold;
@@ -149,18 +164,20 @@ body {
 
 /*-----------------funcionalidades-----------------*/
 .funcionalidades {
-    padding: 40px 40px 60px 40px;
+    padding: 80px 40px 120px 40px;
 
     width: 100%;
 
-    color: #333;
-    background-color: #f5f5f5;
+    background: linear-gradient(to right, #ffffff, #fff3f3);
     text-align: center;
 }
 
 .funcionalidades h2 {
-    margin-bottom: 40px;
+    margin-top: -30px;
+    margin-bottom: 70px;
 
+    color: #111827;
+    font-weight: strong;
     font-size: 40px;
 }
 
@@ -170,13 +187,18 @@ body {
 }
 
 .funcionalidades-card {
+    flex-direction: column;
+    justify-content: center;
+
     padding: 20px;
+    border: 1px solid rgba(255, 46, 166, 0.1);
+    border-left: 10px solid #ff2ea6;
     border-radius: 10px;
 
     width: 300px;
 
-    background-color: white;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    background: linear-gradient(90deg, #f3f3f3, #f4f4f4);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.14);
     transform: scale(1);
 }
 
@@ -185,13 +207,15 @@ body {
 }
 
 .funcionalidades-card h3 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
-    font-size: 30px;
+    color: #424242;
+    font-weight: bold;
+    font-size: 27px;
 }
 
 .funcionalidades-card p {
-
-    font-size: 20px;
-    text-align: justify;
+    color: #575757;
+    font-size: 18px;
+    text-align: center;
 }
