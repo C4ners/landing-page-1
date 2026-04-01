@@ -6,7 +6,7 @@
 }
 
 
-body, .header, .header-menu, .hero, .hero-content, .funcionalidades-cards, .funcionalidades-card, .comoFunciona-cards, .comoFunciona-card, .chamadaFinal, .chamadaFinal-container {
+body, .header, .header-menu, .hero, .hero-content, .funcionalidades-cards, .funcionalidades-card, .comoFunciona-cards, .comoFunciona-card, .chamadaFinal, .chamadaFinal-container, .footer {
     display: flex;
 }
 
@@ -32,7 +32,6 @@ body {
     align-items: center;
 
     padding: 10px 0px;
-    margin: 0 auto;
 
     background-color: rgb(53, 53, 53); 
 }
@@ -314,4 +313,18 @@ body {
 
 .chamadaFinal-container .cta-button {
     font-size: 30px;
+}
+
+/*-----------------FOOTER-----------------*/
+.footer {
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    background-color: rgb(53, 53, 53); 
+}
+
+.footer .p {
+    text-align: center;
 }
